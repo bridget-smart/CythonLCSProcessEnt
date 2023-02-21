@@ -182,5 +182,5 @@ We can pretty quickly see the speed up. For small sequence lengths, `ProcessEntr
 - processentfunctions.py contains process entropy functions to allow for local testing and removing the bugs.
 - testingCythonVersions performs a speed test on the three Cython versions.
 - TestingProcessEntLCSFinderCython compares how the three approaches perform.
-- OriginalLCSCCod] contains lcsfinder2.cpp the newer version of Max's code which allows overlap.
+- OriginalLCSCCode contains lcsfinder2.cpp the newer version of Max's code which allows overlap.
 
