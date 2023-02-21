@@ -21,9 +21,14 @@ For each value of $m$, we calculate the match lengths $l$, such that $S_m,...,S_
 
 To estimate the entropy, we calculate each value of $\Lambda_i$ for $i \leq n$, and use one of the following approximations proposed by Kontoyiannis:
 
-(a)$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=1}^n \dfrac{\Lambda_i^n}{\log n} \to \dfrac{1}{H}$$
-(b)$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=1}^n \dfrac{\Lambda_i^i}{\log i} \to \dfrac{1}{H}$$
-(c)$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=1}^n \dfrac{\Lambda_i^i}{\log n} \to \dfrac{1}{H}$$
+(a) 
+$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=1}^n \dfrac{\Lambda_i^n}{\log n} \to \dfrac{1}{H}$$
+
+(b)
+$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=1}^n \dfrac{\Lambda_i^i}{\log i} \to \dfrac{1}{H}$$
+
+(c)
+$$\lim_{n \to \infty} \dfrac{1}{n} \sum_{i=1}^n \dfrac{\Lambda_i^i}{\log n} \to \dfrac{1}{H}$$
 
 which converges almost surely (Ornstein 1993., Wyner 1989., Kontoyiannis 1998).
 
@@ -64,19 +69,19 @@ has the following suffixes, which we can refer to using the following indices of
 
 Suffix:
 
-     b
-    ab
-   bab
-  abab
- aabab
+         b
+        ab
+       bab
+      abab
+     aabab
 
 Index:
 
-     5
-    4
-   3
-  2
- 1
+        5
+        4
+        3
+        2
+        1
  
 So, we could sort these suffixes and represent this order as follows:
  
@@ -167,7 +172,7 @@ The following function makes the two equivalent:
 
 We can pretty quickly see the speed up. For small sequence lengths, `ProcessEntropy` is slightly faster, but once $N$ gets large, the improved complexity wins.
 
-##Included Code}
+## Included Code
 
 - Testing ProcessEntropy vs FastEnt This folder includes all code to reproduce the results in this notebook. It performs speed and similarity testing between the LCSFinder package and the Process Entropy package.
 - Cython Versions This folder includes all working cython versions. The version LCSCython is the oldest version (code doesn't work properly. LCSCythonLISTtyped contains a version of LCSCython which doesn't use any numpy arrays and implements Cython typing for a speed boost. LCSV2 contains a version which matches lcsfinder2.cpp (allows overlaps).
