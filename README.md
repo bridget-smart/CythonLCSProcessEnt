@@ -1,5 +1,5 @@
 
-# Overview
+See UsefulNotes.pdf for more detail.
 
 ## Notation
 
