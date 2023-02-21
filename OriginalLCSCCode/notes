@@ -1,0 +1,1 @@
+To compile use 'g++ lcs_finder.cpp -O2 -std=c++11'
